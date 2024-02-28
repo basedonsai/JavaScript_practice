@@ -1,0 +1,77 @@
+<script src="ass11.js"></script>
+<html>
+<head>
+    
+    <style>
+        button.op_button {
+            background-color: #FF9500;
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .buttons_list {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+        }
+
+        #res {
+            border: 2px solid #008080;
+            border-radius: 2px;
+            padding: 8px 16px;
+            color: black;
+            background-color: D4D4D2;
+        }
+
+        .calc_inside {
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 10px;
+            width: 235px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: 1C1C1C;
+        }
+
+        .center {
+            text-align: center;
+            padding-right: 10px;
+        }
+        .restext{
+            color: white;
+        }
+        input[type="number"] {
+            padding: 5px;
+            width: 60px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calc">
+        <div class="calc_inside">
+            <h3>Definitely iPhun Calc&#8482;</h3>
+            <hr>
+            <input type="number" name="uno" id="uno">
+            <input type="number" name="duo" id="duo"><br><br>
+            <div class="buttons_list">
+                <button class="op_button" onclick="add()">+</button>
+                <button class="op_button" onclick="sub()">-</button>
+                <button class="op_button" onclick="mul()">*</button>
+                <button class="op_button" onclick="divide()">/</button>
+                <button class="op_button" onclick="mod()">%</button>
+            </div><br>
+            <p class="center"><span class="restext">Result</span><br><br>
+                <span id="res"></span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
